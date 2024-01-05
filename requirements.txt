@@ -1,3 +1,2 @@
 amiyabot
-aiofiles
 openai
