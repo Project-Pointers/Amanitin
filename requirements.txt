@@ -1,2 +1,4 @@
 amiyabot
 openai
+pydantic
+PyYAML

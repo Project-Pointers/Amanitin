@@ -1,0 +1,21 @@
+llm:
+  remote:
+    - name: OpenaiRemote
+      service: openai-official
+      key: sk-123456
+    - name: OtherCGPTRemote
+      url: "https://example.com"
+      service: openai
+      key: sk-098765
+    - name: ModLLMRemote
+      url: "https://example.com"
+      key: abc
+      adapter: default
+
+tts:
+  enable: false
+  remote:
+    - name:
+
+im:
+  adapter:

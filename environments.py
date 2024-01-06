@@ -8,11 +8,4 @@ class Vars:
         self.HISTORY_DIR = os.path.join(self.RUNTIME_DIR, "history.json")
         self.CONFIG_DIR = os.path.join(self.RUNTIME_DIR, "Config.yaml")
 
-
-class Config:
-    # TODO Config
-    pass
-
-
 VARS = vars()
-CONFIG = config()
