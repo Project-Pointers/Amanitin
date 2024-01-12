@@ -16,6 +16,19 @@ tts:
   enable: false
   remote:
     - name:
-
 im:
-  adapter:
+  remote:
+    - name: QQChannel
+      adapter: qch
+      appid: abcdef
+      token: fedcba
+      ws_port: 8060
+      http_port: 8080
+      host: localhost
+    - name: mirai-api-http
+      adapter: mah
+      appid: abcdef
+      token: fedcba
+      ws_port: 8060
+      http_port: 8080
+      host: localhost

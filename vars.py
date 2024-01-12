@@ -10,4 +10,4 @@ class Vars:
         self.CONFIG_DIR = os.path.join(self.RUNTIME_DIR, "Config.yaml")
 
 
-VARS = Vars()
+vars = Vars()

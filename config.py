@@ -36,7 +36,7 @@ class IMConfig:
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]):
-        pass
+        return cls(**data)
 
 
 class Config:
@@ -45,6 +45,7 @@ class Config:
             config: dict[str, Any] = yaml.safe_load(file.read())
             self.llm = LLMConfig.from_dict(config['llm'])
             self.tts = TTSConfig.from_dict(config['tts'])
+            self.im = IMConfig.from_dict(config['im'])
 
 
 config = Config()
