@@ -10,6 +10,15 @@ class APIRemote(BaseModel):
     key: Optional[str]
     url: Optional[str]
 
+class IMRemote(BaseModel):
+    name: str
+    adapter: str
+    appid: str
+    token: str
+    ws_port: Optional[int]
+    http_port: Optional[int]
+    host: Optional[int]
+
 
 class LLMConfig:
     def __init__(self, remotes: list[APIRemote] = []):
@@ -31,8 +40,8 @@ class TTSConfig:
 
 
 class IMConfig:
-    def __init__(self, adapter: str, **kwargs):
-        pass
+    def __init__(self, remotes: list[IMRemote] = []):
+        self.remotes: list[IMRemote] = remotes
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]):
